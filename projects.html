@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<!-- 
+    William Huang's Additional Information Webiste.
+    Hand Coded using basic HTML and Bootstrap
+
+    William Huang, December 2015
+-->
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>William Huang</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    
+    
+    
+    <body>
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html"><span class="navbar-brand2">WILLIAM HUANG</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <!--<li><a href="index.html#aboutme"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About Me</a></li>-->
+                        <li><a href="index.html#side"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Side Projects</a></li>
+                        <li><a href="index.html#extra"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Extracurriculars</a></li>
+                        <li><a href="index.html#learning"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Learning</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="side-projects" id="side">
+            <div class="container">
+                <h2>Side Projects</h2>
+                
+                <h6>References</h6>
+                <div class="row">
+                    <div class="col-md-7">
+                        <p>My fascination for technology led to explore other areas of technology that interested me, using the resources at hand. I explored these areas myself, and because of this there was not teacher that stood behind me when I couldn’t figure something out, or a mentor to point me in the right direction.</p>
+                        <p>The only resource that I had was the internet, and the books you see here. These books have guided me through the vast majority of my projects, and have taught me most of what I know today about circuits and programming. It was not easy to go through these thick textbooks, but I’ve learned valuable information from each and every one of them.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img src="pictures/BOOKS.JPG"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fillerspot" id="red"></div>
+                <h6>The 3x3x3 RED LED CUBE</h6>
+                <div class="row">
+                    <div class="col-md-7">
+                        <p>The first one I made was just a test of what the Arduino could do, nothing more. It was a very simple 3x3x3 RED LED cube, controlled by the Arduino. It used pulse width modulation (PWM) to control the brightness of each individual LED, and was a fairly simple project. But it did teach me the fundamentals of making such projects, such as using a transistor for each cathode wire to ground the LEDs to make them light up. It also used very basic algorithms to create simple patterns with the 27 LEDs. It was a fairly intuitive project, but nonetheless it was still a very fun project to make.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img src="pictures/REDLED.JPG"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fillerspot" id="blue"></div>
+                <h6>The 4x4x4 BLUE LED CUBE</h6>
+                <div class="row">
+                    <div class="col-md-7">
+                        <p>After creating the 3x3x3 RED LED cube, I wanted to create something bigger, something more impressive. So I took the next natural step and created the 4x4x4 cube, which was more difficult but also more rewarding at the same time.</p>
+                        <p>Creating this naturally came with it's own share of challenges. For example:</p>
+                        <ul class="description">
+                            <li>It became too expensive to devote an entire Arduino to each individual project. It was okay for experimental purposes but it became impossible to use a $35 dollar board for each of my projects. So I decided to replace the Arduino in my projects with it’s microprocessor, the ATMEGA328, which at it’s core is what the Arduino really is. This brought down the cost of each project to a manageable $5.</li>
+                            <li>Then the challenge changed to how I would control each LED, and it’s respective brightness, since I no longer had enough PWM capable pins to support pulse width modulation to each LED. (The 3x3x3 already required 9 PWM pins to control) The solution turned out to be completely changing the control structure of the matrix. Since PWM was no long viable, another technique had to be used, and that was bit angle modulation (BAM). BAM allowed me to control each of the 64 LEDs and give each a 16-bit brightness level. This allowed me to use all 13 digital pins on the ATMEGA328, instead of limiting myself to the scarce number of PWM pins it had.</li>
+                        </ul>
+                        <p>But after finishing the project, I learned a great deal of things, for example: </p>
+                        <ul class="description">
+                            <li>How to control a large matrix of LEDs with only a limited number of digital outputs and an even more limited number of PWM outputs.</li>
+                            <li>Various software techniques which I used to program the animations you see in the video of the cube.</li>
+                            <li>How to make a finished project look visually appealing and presentable.</li>
+                        </ul>
+                        <p>This project was lots of fun, but I found that it wasn't enough. I wanted more colours, more animations, the 4x4x4 BLUE cube just wasn’t enough. So I then took the next step forward, and created the 4x4x4 RGB LED CUBE, which was much, much more sophisticated then anything I've ever built before.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img src="pictures/BLUELED.JPG"/>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="pictures/BLUELED2.JPG"/>
+                        </div>
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <div align="center" class="embed-responsive embed-responsive-16by9">
+    <video class="embed-responsive-item" controls>
+        <source src="pictures/cube.webm" type="video/webm">
+        <source src="pictures/cube.mp4" type="video/mp4">
+    </video>
+</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fillerspot" id="rgb"></div>
+                <h6>4x4x4 RGB LED CUBE - The Finale</h6>
+                <div class="row">
+                    <div class="col-md-7">
+                        <p>The 4x4x4 RGB LED CUBE was the final project in this series I decided to make, simply because anything larger would just consume too much time to complete, so I decided to utilize all my knowledge to build something cool to end it off. As mentioned, this was something that was much more sophisticated than anything I’ve done before, but it was fun to face the challenge.</p>
+                        <p>Designing the cube presented me with many problems, for example:</p>
+                        <ul class="description">
+                            <li>Finding a way to control 192 LEDs individually.</li>
+                            <li>Giving each LED a 16-bit brightness level to create any colour.</li>
+                            <li>Sourcing the power to all 192 LEDs.</li>
+                            <li>Finding a way to control 192 LEDs with only 13 digital output pins from the ATMEGA328 microprocessor.</li>
+                        </ul>
+                        <p>I solved these problems with a new technique I discovered when designing the cube, which was using shift registers. Shift registers was the major difference between the RGB cube and the BLUE cube, simply because there were too many LEDs in the RGB cube. There was no possibility of controlling 192 LEDs without additional help. Shift registers allowed me to control all 192 LEDs with only 3 digital output pins from the ATMEGA328, and that is something I am proud of. Using this technique I was able to power all 192 LEDs and it allowed them each to have a 16-bit brightness level.</p>
+                        <p>This project was definitely the most fun I’ve had building anything, simply because of the complexity that was involved. Soldering over 500 joints and painstakingly checking each was tough but in the end worth it because of all that I’ve learned from this project. It was truly a masterpiece.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img src="pictures/RGBTEST.JPG"/>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="pictures/RGBACTUAL.JPG"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <h6>8x8 Dot Matrix Display</h6>
+                <div class="row">
+                    <div class="col-md-7">
+                        <p>This was just a fun little project to test the dot matrix display I got. Four of these lined up can create a very nice display that can display a variety of things.</p>
+                        <p>The most difficult part of this project was getting each pin mapped. Because of the low cost of the display, the pins were mapped in a horrendous fashion and proved difficult to control properly. But in the end it worked out well and was a fun project to work on.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img src="pictures/8x8.JPG"/>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>

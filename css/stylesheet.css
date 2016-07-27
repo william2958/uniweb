@@ -1,0 +1,164 @@
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+img {
+    padding: 10px;
+}
+
+.navbar-inverse {
+     background: #000;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background: #000;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+ .navbar-inverse .navbar-nav > .open > a:hover,
+ .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background: #000;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: #000000;
+    color:#eeeeee;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
+    color:#000000;
+}
+
+.side-projects {
+    background-color: #efefef;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    padding-bottom: 2em;
+}
+
+.courses {
+    background-color: #efefef;
+    border-top: 1px solid #dbdbdb;
+}
+
+.jumbotron {
+    background-color: #000;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#deca {
+    background-image: URL("../pictures/decagroup.jpg");
+}
+
+#debate {
+    background-image: URL("../pictures/debategroup.jpg");
+}
+
+#sac {
+    background-image: URL("../pictures/sacgroup.jpg")
+}
+
+#sac h1 {
+    color: black;
+}
+
+#sac p {
+    color: black;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.navbar-brand2 {
+    float: left;
+    height: 50px;
+    padding: 15px 2em;
+    font-size: 18px;
+    line-height: 20px;
+    color: #9d9d9d;
+}
+
+iframe {
+    padding: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.description {
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 3em;
+}
+
+h4 {
+    margin-top: 2em;
+    font-size: 1.8em;
+}
+
+h6 {
+    margin-top: 1em;
+    font-size: 1.4em;
+}
+
+.courses ul {
+    font-size: 1.1em;   
+}
+
+.courses .row {
+    margin-top: 3em;
+}
+
+.pictures {
+    display: inline;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    background-color: #FFF;
+    margin-bottom: 4em;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.footer {
+    padding-top: 10px;
+    text-align: right;
+    background-color: black;
+}
+
+.footingtext {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

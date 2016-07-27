@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<!-- 
+    William Huang's Additional Information Webiste.
+    Hand Coded using basic HTML and Bootstrap
+
+    William Huang, December 2015
+-->
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>William Huang</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    
+    
+    
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html"><span class="navbar-brand2">WILLIAM HUANG</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <!--<li><a href="#aboutme"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About Me</a></li>-->
+                        <li><a href="#side"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Side Projects</a></li>
+                        <li><a href="#extra"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Extracurriculars</a></li>
+                        <li><a href="#learning"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Learning</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!--
+        <div class="about-me" id="aboutme">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>Everyone, I think who lives in the modern world has a fascination for technology. Whether that be which phone to get next, which laptop to get, what movie to watch, or which app they want to get next. Everyone is so caught up in this maelstrom of technology that it’s become impossible to find anyone who isn’t fascinated by the technology surrounding us every day.</p>
+                        <p>My fascination for technology started early, back when I was only seven or eight, when I was absolutely obsessed with LEGOs, just like any other kid. My dad saw this as a great opportunity to introduce me to the world of technology early by buying me a LEGO Mindstorms set. This was my first experience with coding, the set allowed you to code with graphical programming allowing you to make a little robot obey your commands. </p>
+                        <p>Ever since then, I was absolutely hooked with tech. I soon began to experiment with other coding platforms. I remember the first time I tried my hand at python, back when I was ten. Soon after that I got more and more interested in programming, designing things simple desktop games with python.</p>
+                        <p>Software wasn’t the only thing that fascinated me, I was actually more interested in the hardware aspect of things. I began to build electronic circuit systems when I was 13, and soon turned to the Arduino platform to develop my first micro-controller controlled circuits. </p>
+                        <p>I didn’t just decide to study engineering at university, but it’s been the direction my entire life has taken. From the first time I touched a phone to the time I wrote my first android app,  I’ve always known I wanted to be an engineer. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <div class="side-projects" id="side">
+            <div class="container">
+                
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Projects
+                            <small>A collection of projects</small>
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4 portfolio-item">
+                        <a data-toggle="collapse" href="#redLED" aria-expanded="false" aria-controls="redLED">
+                            <div class="thumbnail">
+                                <img src="pictures/REDLED.JPG"/>
+                            </div>
+                        </a>
+                        <h3>
+                            <a data-toggle="collapse" href="#redLED" aria-expanded="false" aria-controls="redLED">3x3x3 Red LED Cube</a>
+                        </h3>
+                        <p>A simple little cube that showed cool little animations. Powered by PWM through an Arduino Uno.</p>
+                    </div>
+                    <div class="col-md-4 portfolio-item">
+                        <a data-toggle="collapse" href="#blueLED" aria-expanded="false" aria-controls="blueLED">
+                            <div class="thumbnail">
+                                <img src="pictures/BLUELED.JPG">
+                            </div>
+                        </a>
+                        <h3>
+                            <a data-toggle="collapse" href="#blueLED" aria-expanded="false" aria-controls="blueLED">4x4x4 Blue LED Cube</a>
+                        </h3>
+                        <p>A slightly larger cube that was capable of more advanced animations. Powered by <a href="http://www.batsocks.co.uk/readme/art_bcm_3.htm">BAM</a>.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a data-toggle="collapse" href="#rgbLED" aria-expanded="false" aria-controls="rgbLED">
+                            <div class="thumbnail">
+                                <img src="pictures/RGBTEST.JPG">
+                            </div>
+                        </a>
+                        <h3>
+                            <a data-toggle="collapse" href="#rgbLED" aria-expanded="false" aria-controls="rgbLED">4x4x4 RBG LED Cube</a>
+                        </h3>
+                        <p>A complex cube that is capable of creating various colours with a 16-bit RBG color matrix.</p>
+                    </div>
+                </div>
+                
+                <div class="collapse" id="redLED">
+                    <div class="well">
+                        <h6>The 3x3x3 RED LED CUBE</h6>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <p>The first one I made was just a test of what the Arduino could do, nothing more. It was a very simple 3x3x3 RED LED cube, controlled by the Arduino. It used pulse width modulation (PWM) to control the brightness of each individual LED, and was a fairly simple project. But it did teach me the fundamentals of making such projects, such as using a transistor for each cathode wire to ground the LEDs to make them light up. It also used very basic algorithms to create simple patterns with the 27 LEDs. It was a fairly intuitive project, but nonetheless it was still a very fun project to make.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="thumbnail">
+                                    <img src="pictures/REDLED.JPG"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collapse" id="blueLED">
+                    <div class="well">
+                        <h6>The 4x4x4 BLUE LED CUBE</h6>
+                        <div class="row">
+                    <div class="col-md-7">
+                        <p>After creating the 3x3x3 RED LED cube, I wanted to create something bigger, something more impressive. So I took the next natural step and created the 4x4x4 cube, which was more difficult but also more rewarding at the same time.</p>
+                        <p>Creating this naturally came with it's own share of challenges. For example:</p>
+                        <ul class="description">
+                            <li>It became too expensive to devote an entire Arduino to each individual project. It was okay for experimental purposes but it became impossible to use a $35 dollar board for each of my projects. So I decided to replace the Arduino in my projects with it’s microprocessor, the ATMEGA328, which at it’s core is what the Arduino really is. This brought down the cost of each project to a manageable $5.</li>
+                            <li>Then the challenge changed to how I would control each LED, and it’s respective brightness, since I no longer had enough PWM capable pins to support pulse width modulation to each LED. (The 3x3x3 already required 9 PWM pins to control) The solution turned out to be completely changing the control structure of the matrix. Since PWM was no long viable, another technique had to be used, and that was bit angle modulation (BAM). BAM allowed me to control each of the 64 LEDs and give each a 16-bit brightness level. This allowed me to use all 13 digital pins on the ATMEGA328, instead of limiting myself to the scarce number of PWM pins it had.</li>
+                        </ul>
+                        <p>But after finishing the project, I learned a great deal of things, for example: </p>
+                        <ul class="description">
+                            <li>How to control a large matrix of LEDs with only a limited number of digital outputs and an even more limited number of PWM outputs.</li>
+                            <li>Various software techniques which I used to program the animations you see in the video of the cube.</li>
+                            <li>How to make a finished project look visually appealing and presentable.</li>
+                        </ul>
+                        <p>This project was lots of fun, but I found that it wasn't enough. I wanted more colours, more animations, the 4x4x4 BLUE cube just wasn’t enough. So I then took the next step forward, and created the 4x4x4 RGB LED CUBE, which was much, much more sophisticated then anything I've ever built before.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img src="pictures/BLUELED.JPG"/>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="pictures/BLUELED2.JPG"/>
+                        </div>
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <div align="center" class="embed-responsive embed-responsive-16by9">
+                                <video class="embed-responsive-item" controls>
+                                    <source src="pictures/cube.webm" type="video/webm">
+                                    <source src="pictures/cube.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                
+                <div class="collapse" id="rgbLED">
+                    <div class="well">
+                        <h6>4x4x4 RGB LED CUBE - The Finale</h6>
+                        <div class="row">
+                    <div class="col-md-7">
+                        <p>The 4x4x4 RGB LED CUBE was the final project in this series I decided to make, simply because anything larger would just consume too much time to complete, so I decided to utilize all my knowledge to build something cool to end it off. As mentioned, this was something that was much more sophisticated than anything I’ve done before, but it was fun to face the challenge.</p>
+                        <p>Designing the cube presented me with many problems, for example:</p>
+                        <ul class="description">
+                            <li>Finding a way to control 192 LEDs individually.</li>
+                            <li>Giving each LED a 16-bit brightness level to create any colour.</li>
+                            <li>Sourcing the power to all 192 LEDs.</li>
+                            <li>Finding a way to control 192 LEDs with only 13 digital output pins from the ATMEGA328 microprocessor.</li>
+                        </ul>
+                        <p>I solved these problems with a new technique I discovered when designing the cube, which was using shift registers. Shift registers was the major difference between the RGB cube and the BLUE cube, simply because there were too many LEDs in the RGB cube. There was no possibility of controlling 192 LEDs without additional help. Shift registers allowed me to control all 192 LEDs with only 3 digital output pins from the ATMEGA328, and that is something I am proud of. Using this technique I was able to power all 192 LEDs and it allowed them each to have a 16-bit brightness level.</p>
+                        <p>This project was definitely the most fun I’ve had building anything, simply because of the complexity that was involved. Soldering over 500 joints and painstakingly checking each was tough but in the end worth it because of all that I’ve learned from this project. It was truly a masterpiece.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img src="pictures/RGBTEST.JPG"/>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="pictures/RGBACTUAL.JPG"/>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4 portfolio-item">
+                        <a data-toggle="collapse" href="#8LED" aria-expanded="false" aria-controls="8LED">
+                            <div class="thumbnail">
+                                <img src="pictures/8x8.JPG">
+                            </div>
+                        </a>
+                        <h3>
+                            <a data-toggle="collapse" href="#8LED" aria-expanded="false" aria-controls="8LED">8x8 LED Matrix grid</a>
+                        </h3>
+                        <p>A quick project using an 8x8 LED matrix display.</p>
+                    </div>
+                    <div class="col-md-4 portfolio-item">
+                        <a data-toggle="collapse" href="#blueLED" aria-expanded="false" aria-controls="blueLED">
+                            <div class="thumbnail">
+                                <img src="pictures/BLUELED2.JPG">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 portfolio-item">
+                        <a data-toggle="collapse" href="#rgbLED" aria-expanded="false" aria-controls="rgbLED">
+                            <div class="thumbnail">
+                                <img src="pictures/rbg01.JPG">
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+                
+                <div class="collapse" id="8LED">
+                    <div class="well">
+                        <h6>8x8 Dot Matrix Display</h6>
+                        <div class="row">
+                    <div class="col-md-7">
+                        <p>This was just a fun little project to test the dot matrix display I got. Four of these lined up can create a very nice display that can display a variety of things.</p>
+                        <p>The most difficult part of this project was getting each pin mapped. Because of the low cost of the display, the pins were mapped in a horrendous fashion and proved difficult to control properly. But in the end it worked out well and was a fun project to work on.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumbnail">
+                            <img src="pictures/8x8.JPG"/>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="extracurricular" id="extra">
+            <div class="container">
+                <h2>Extracurriculars</h2>
+                <div class="jumbotron" id="deca">
+                    <div class="container">
+                        <h1>DECA.</h1>
+                        <p>Through conferences and competitions, DECA instills professionalism and prepares youth to respond to authentic business cases and market demands.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>DECA is a co-curricular high school club that teaches students the importance of business and how to handle situations through case studies. It prepares students for their future business careers by showing them what the business world truly is.</p>
+                        <p>I can honestly say that DECA has done exactly this for me. Whether it be attending any of DECA's competitions, or attending leadership conferences, it has truly showed me what the business world was like. From dressing up head to toe, to competing in nervracking case study competitions, DECA has shown me what it's like to be part of the business world.</p>
+                        <p>From standing on a podium infront of 3000 people, to attending DECA's international development conference, DECA has made some of my favourite highschool experiences, and it was my absolute honour this year to lead Dr. Norman Bethune's DECA team, as their President.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src=""/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="jumbotron" id="debate">
+                    <div class="container">
+                        <h1>The Debate team.</h1>
+                        <p>Winning through speech</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Dr. Norman Bethune's Debate team seeks out to participate at seasonal Pro-Con Debating forums, and usually places in the competition. We practise and train together to improve our public presentation skills, while also growing together as a team.</p>
+                        <p>Participating in the debate team is an experience that is second to none. I've learned public speaking skills that will stay with me forever, skills that I believe will be paramount to my future success as an individual. I still remember the day when it was just me and a few friends who wanted to start a debating club, and we’ve come so far to become one of our regions’ top debating teams.</p>
+                        <p>But it's not just the experiences we share at competitions that make this team so dear to me, but rather the time we spend together is what makes this team so special. From staying up into the early mornings debating about various topics, to burning the might night oil finalizing our debates for the competition the next day. It’s these experiences that will stay with me forever and is why Debate is such a big part of my high school career.</p>
+                        <p>Because when it really comes down to it, we're not a team. We're a family.</p>
+                    </div>
+                </div>
+                
+                <div class="jumbotron" id="sac">
+                    <div class="container">
+                        <h1>SAC.</h1>
+                        <p>Bethune's Student Activity Council.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Being part of Bethune’s SAC has been such a rewarding experience. I’ve gotten to experience what it’s like to speak infant of an entire school and give an election speech, and what it’s like to help lead the school during school events. Being part of school council is so much more than just meeting once a week, it’s about being part of something special, it’s about being part of a group of teens working together to make our school a better place. A place filled with fun events, exciting programs, and beautiful dances.</p>
+                        <p>Making it onto the SAC team last year was definitely one of the highlights of my high school career. After the nerve-wracking experience of giving a speech in front of an entire school, and then finding out that I won the election was a feeling that hasn’t ever been equalled. It was a fascinating experience that I hold very dearly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="courses" id="learning">
+            <div class="container">
+                 <h2>Extracurricular Learning</h2>
+                 <div class="row row-content">
+                     <div class="col-xs-12">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                            <a href="#pluralsight" aria-controls="pluralsight"
+                             role="tab" data-toggle="tab">Pluralsight</a></li>
+                            <li role="presentation"><a href="#coursera"
+                             aria-controls="coursera" role="tab"
+                             data-toggle="tab">Coursera</a></li>
+                            <li role="presentation"><a href="#lynda"
+                             aria-controls="lynda" role="tab"
+                             data-toggle="tab">Lynda</a></li>
+                            <li role="presentation"><a href="#udemy"
+                             aria-controls="udemy" role="tab"
+                             data-toggle="tab">Udemy</a></li>
+                            <li role="presentation"><a href="#code"
+                             aria-controls="code" role="tab"
+                             data-toggle="tab">Codeacademy</a></li>
+                        </ul>
+                         
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="pluralsight">
+                                <h3>Pluralsight <small>Online Dev and IT courses</small></h3>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p>Desipite not being as free and readily available as coursera, PluralSight still offerred amazing courses that I was able to gain access and learn from their enormous database of courses that provide much more in depth information and learning compared to other free courses.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul>
+                                            <li>Learning to Build Apps with App Inventor</li>
+                                            <li>Android Beginner Series: Just Enough Java</li>
+                                            <li>Android Beginner Series: Understanding Android</li>
+                                            <li>Introduction to Android Development</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade in" id="coursera">
+                                <h3>Coursera <small>Free online classes from 120+ top universities and educational organizations</small></h3>
+                        
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p>Learning additional courses from free online course providers like coursera allow me to broaden my knowlege spectrum, and allow me to indulge in more creative learning paths, such as physics.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul>
+                                            <li>How Things Work 1</li>
+                                            <li>Advanced Chemistry</li>
+                                            <li>Pre-Calculus</li>
+                                            <li>Programming Mobile Applications for Android Handheld Systems</li>
+                                            <li>Creative Programming for Digital Media & Mobile Apps</li>
+                                            <li>Applying to U.S. Universities</li>
+                                            <li>Learn to Program: The Fundamentals</li>
+                                            <li>The Arduino Platform and C Programming</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade in" id="lynda">
+                                <h3>Lynda <small>Expert Led Training</small></h3>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p>Lynda was another great information source, but this was used more for more random courses that I believed would help me further down the road.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul>
+                                            <li>Relational Database Fundamentals</li>
+                                            <li>Photoshop CC Essential Training</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade in" id="udemy">
+                                <h3>Udemy <small>From experts to you</small></h3>
+                        
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>Udemy was a great online course provider that provided courses to further my programming skills, but to also develop my other learning skills, and allowed me to learn other great skills.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li>Master Android 6.0 Marshmallow Apps Development Using Java</li>
+                                            <li>Become a SuperLearner: Learn Speed Reading & Advanced Memory</li>
+                                            <li>Logo Design Fundamentals</li>
+                                            <li>Photoshop In-Depth: Master all of Photoshop's Tools Easily</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane fade in" id="code">
+                                <h3>Codeacademy <small>Interactive courses on how to program.</small></h3>
+                        
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>Codeacademy is a free online courser provider that is unique because it's courses are all interactive. An interactive window is where you learn to code various programming languages and how to develop professional grade websites. Codeacademy is my favourite course providers because of how straight forward and intuitive the courses are, they truly allow you to learn an entire programming language in a matter of hours, and has helped me learn many of the languages I know today.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>Learn Git</li>
+                                            <li>Learn Java</li>
+                                            <li>HTML & CSS</li>
+                                            <li>Javascript</li>
+                                            <li>jQuery</li>
+                                            <li>PHP</li>
+                                            <li>Make a website</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="container" id="footing">
+                <p class="footingtext text-muted">william2958@gmail.com</p>
+                <p class="footingtext text-muted">(647) 773-2516</p>
+            </div>
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71913021-1', 'auto');
+  ga('send', 'pageview');
+
+        </script>
+        
+    </body>
+    
+</html>
